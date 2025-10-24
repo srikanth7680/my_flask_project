@@ -1,0 +1,155 @@
+/* General Page Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 80px;
+}
+
+/* Container Box */
+.container {
+    background: #fff;
+    width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px 30px;
+    text-align: center;
+}
+
+/* Heading */
+.container h1 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Add Task Form */
+.add-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.add-form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.add-form input:focus {
+    border-color: #7b61ff;
+    box-shadow: 0 0 5px rgba(123, 97, 255, 0.3);
+}
+
+.add-form button {
+    margin-left: 8px;
+    padding: 10px 16px;
+    background: #7b61ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.add-form button:hover {
+    background: #6a4df5;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #f9f9ff;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: #f1f0ff;
+}
+
+/* Task text */
+.task-text {
+    flex: 1;
+    text-align: left;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Actions (Update/Delete) */
+.actions {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+/* Update Form */
+.update-form {
+    display: flex;
+    align-items: center;
+}
+
+.update-form input {
+    width: 100px;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.update-form input:focus {
+    border-color: #7b61ff;
+}
+
+/* Buttons */
+.update-btn,
+.delete-btn {
+    text-decoration: none;
+    background: #7b61ff;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.update-btn:hover {
+    background: #6a4df5;
+}
+
+.delete-btn {
+    background: #ff4c4c;
+}
+
+.delete-btn:hover {
+    background: #e93d3d;
+}
+
+/* Empty state */
+.no-task {
+    color: #777;
+    font-style: italic;
+    margin-top: 20px;
+}
